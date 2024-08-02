@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+
+/* Root variables */
+:root {
+    --linear-gradient1: linear-gradient(to bottom, #fde0d5 , #fad8cc );
+    /* Linear Gradient 1 */
+    --linear-gradient2: linear-gradient(to bottom, #fde0d5 , #fad8cc, #ecb5a1 );
+    /* Linear Gradient 2*/
+    --white: #ffffff;
+    /* White */
+    --primary-color: #c3887a;
+    /* Primary Color */
+    --secondary-color: #e09e8e;
+    /* Secondary Color */
+    --font-family: "Cabin", sans-serif;
+    /* Body font */
+}
+
+/* Global reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: var(--font-family);
+}
+
+body {
+    height: 100vh;
+    background-image: var(--linear-gradient1);
+    min-width: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 130px;
+    padding: 0 5%;
+    color: var(--primary-color);
+    font-size: 25px;
+}
+
+header .logo {
+    margin-right: auto;
+    width: 380px;
+}
+
+header .logo i {
+    width: 100%;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header .menu {
+    display: flex;
+    align-items: center;
+}
+
+header nav .menu li a {
+    position: relative;
+    color: var(--primary-color);
+    font-size: 1rem;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+header nav .menu li a:hover {
+    color: var(--secondary-color);
+
+}
+
+/* Toggle button for menu */
+header nav #toggle {
+    font-size: 1.5rem;
+    margin-left: 120px;
+    cursor: pointer;
+}
+
+/* Main content styles */
+.main {
+    padding: 0 5%;
+    color: var(--primary-color);
+    text-align: center;
+    width: 700px;
+    margin: 0 auto;
+}
+
+.main h1 {
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 500;
+    margin-top: -10px;
+}
+
+/* Main paragraph styles */
+.main p {
+    font-size: 0.95rem;
+    font-weight: 100;
+    margin: 12px 0 20px;
+}
+
+/* Button styles */
+.main button {
+    background: #cb8e81;
+    padding: .74rem 2.1rem;
+    outline: none;
+    border: none;
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 2.5rem;
+}
+
+/* Button hover effect */
+.main button:hover {
+    background: #f2ae9d;
+}
+
+/* Image positioning for the main section */
+.main .images .image-1,
+.main .images .image-2,
+.main .images .image-3,
+.main .images .image-4,
+.main .images .image-5,
+.main .images .image-6,
+.main .images .image-7 {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    z-index: -10;
+}
+
+/* Individual image styles */
+
+
+/* Responsive styles for small screens */
+
